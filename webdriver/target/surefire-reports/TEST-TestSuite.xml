@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="44.102" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="43.712" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_101\jre\bin"/>
@@ -62,7 +62,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="checkDatePostedForOffer" classname="com.akamai.tests.Search_Test_Jobs" time="3.6"/>
-  <testcase name="checkNumberOfJobsPosted" classname="com.akamai.tests.Search_Test_Jobs" time="0.159"/>
-  <testcase name="checkNumberOfResults" classname="com.akamai.tests.Search_Test_Jobs" time="1.084"/>
+  <testcase name="checkDatePostedForOffer" classname="com.akamai.tests.Search_Test_Jobs" time="4.043"/>
+  <testcase name="checkNumberOfJobsPosted" classname="com.akamai.tests.Search_Test_Jobs" time="0.172"/>
+  <testcase name="checkNumberOfResults" classname="com.akamai.tests.Search_Test_Jobs" time="0.385"/>
 </testsuite>

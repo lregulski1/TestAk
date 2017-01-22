@@ -18,6 +18,4 @@ public class AkamaiCarrersSearchResultSubPage extends BaseMethods{
 	public void checkPosstDate(String date){
 		Assert.assertEquals(date, postedDate.getText());	
 	}
-
-
 }
