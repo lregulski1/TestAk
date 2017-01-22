@@ -1,2 +1,0 @@
-INDEX VERSION 1.129+E:\AkamaiTest\.metadata\.plugins\org.eclipse.jdt.core
-4041641669.index
