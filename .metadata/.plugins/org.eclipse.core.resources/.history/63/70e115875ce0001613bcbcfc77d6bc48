@@ -1,0 +1,18 @@
+package base;
+
+import org.openqa.selenium.WebElement;
+
+public class BaseMethods {
+	
+	public String PAGE_URL;
+	public String PAGE_TITLE;
+	
+	public void loadPage(){
+		
+	}
+
+	 public boolean isElementVisible(WebElement element){
+	        return element.isDisplayed();
+	    }
+	
+}

@@ -1,0 +1,73 @@
+package automation.pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+
+
+public class AkamaiCarrersMainPage {	
+
+	public final static String PAGE_URL = "https://akamaijobs.referrals.selectminds.com/";
+	public final static String PAGE_TITLE = "Akamai Careers - Jobs";
+
+	
+	@FindBy(css=".ui-front>#keyword") WebElement field_search;
+	@FindBy(css=".jAddFacetSearch>#jLocInputHldr") WebElement button_location;
+	@FindBy(css=".primary_btn>.btn_text") WebElement button_search;
+	@FindBy(css="#jSearchSubmit") WebElement searchResult;
+	@FindBy(css="#cboxContent>#cboxLoadedContent") WebElement popup_signUp;
+	@FindBy(css=".with_close>.jCloseModal.modal_close") WebElement button_closeSignUpAllert;
+	
+	WebDriver driver;	
+	public AkamaiCarrersMainPage(WebDriver driver){
+		this.driver = driver;
+	} 
+	
+	public void enterSearchString(String text){
+		field_search.sendKeys(text);
+		Assert.assertEquals(field_search.getAttribute("value"), text);	
+	}
+	
+	public void selectLocation(String location) {
+		//Create a dynamic xpath for entered String
+		String locator = "//li[text()[contains(.,'"+location+"')]]"; 
+	    WebElement locationElement = driver.findElement(By.xpath(locator));
+	    button_location.click();
+	    locationElement.click();
+	    //Check if location is correctly added to the list 
+	    String checkIfExist =  ".//*[@id='location_facet_chzn']//li//span[text()[contains(.,'"+location+"')]]";
+	    isElementVisible(checkIfExist);	    
+	}
+	
+	public void clickSearchButton(){
+		button_search.click();
+		//If sign up pop up appears then close it
+		if(popup_signUp.isEnabled()){
+			 button_closeSignUpAllert.click();
+			 WebDriverWait wait = new WebDriverWait(driver, 15);
+			 wait.until(ExpectedConditions.elementToBeClickable(button_search)); 
+			 button_search.click();
+		 }	 
+		//Check if search has been processed
+		String filtersLocator = ".//*[@id='portal_content']";
+		isElementVisible(filtersLocator);
+		
+	}
+	
+	public void checkNumberOfResults(String number){
+		Assert.assertEquals(searchResult.getText(), number);
+	}
+
+	 public boolean  isElementVisible(String xpath){
+	        return driver.findElement(By.xpath(xpath)).isDisplayed();
+	    }
+	 
+
+	 
+	
+	
+}

@@ -1,0 +1,51 @@
+package com.akamai.tests;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import automation.pages.AkamaiCarrersMainPage;
+
+public class Search_Test_Jobs {
+	
+	public WebDriver driver;
+	AkamaiCarrersMainPage ACarrersMainPage;
+	
+	
+	@BeforeMethod(alwaysRun = true)
+	public void setup(){
+		System.setProperty("webdriver.chrome.driver", "E:\\Selenium\\chromedriver_win32_2_27\\chromedriver.exe");
+		this.driver = new ChromeDriver();	
+		ACarrersMainPage = PageFactory.initElements(driver, AkamaiCarrersMainPage.class);
+		driver.get(ACarrersMainPage.PAGE_URL);
+		Assert.assertEquals(driver.getTitle(), ACarrersMainPage.PAGE_TITLE);
+		ACarrersMainPage.enterSearchString("Test");
+		ACarrersMainPage.selectLocation("Krakow");	
+		
+	}
+	
+	@AfterMethod(alwaysRun = true)
+	public void terdown(){
+		driver.quit();		
+	}
+	
+	
+	@Test
+	public void checkIfForTestKrakowAre11Results (){
+	ACarrersMainPage.clickSearchButton();
+	ACarrersMainPage.checkNumberOfResults("11");
+	
+	
+		
+	}
+	
+
+}

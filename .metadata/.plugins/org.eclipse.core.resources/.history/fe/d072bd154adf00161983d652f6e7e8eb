@@ -1,0 +1,25 @@
+package webdriver;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+public class FirstSampleTest {
+
+	public static void main(String[] args) {
+
+		
+		
+		driver.get("https://akamaijobs.referrals.selectminds.com/");
+		
+		WebElement box_search = driver.findElement(By.cssSelector(".ui-front>#keyword"));
+		box_search.sendKeys("test");
+		
+		driver.quit();
+		
+		
+	}
+
+}

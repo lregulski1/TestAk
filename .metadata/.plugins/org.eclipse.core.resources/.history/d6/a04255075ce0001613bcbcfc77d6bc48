@@ -1,0 +1,14 @@
+package base;
+
+public class BaseMethods {
+	
+	public String PAGE_URL;
+	public String PAGE_TITLE;
+	
+	public void loadPage(){
+		
+	}
+
+	
+	
+}

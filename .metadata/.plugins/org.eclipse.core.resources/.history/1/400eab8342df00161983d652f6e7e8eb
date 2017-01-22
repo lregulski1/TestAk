@@ -1,0 +1,21 @@
+package webdriver;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+public class FirstSampleTest {
+
+	public static void main(String[] args) {
+
+		WebDriver driver = new RemoteWebDriver("http://localhost:9515", DesiredCapabilities.chrome());
+		WebDriver driver = new ChromeDriver();
+		//System.setProperty("webdriver.chrome.driver", "E:\\Selenium\\chromedriver_win32_2_27\\chromedriver.exe");
+		driver.get("http://www.akamai.com");
+		
+		driver.close();
+		
+		
+	}
+
+}
