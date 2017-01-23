@@ -2,44 +2,44 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Search test word inside Carrers Akamai Page" duration-ms="42279" started-at="2017-01-22T23:08:25Z" finished-at="2017-01-22T23:09:07Z">
+  <suite name="Search test word inside Carrers Akamai Page" duration-ms="46542" started-at="2017-01-23T01:45:03Z" finished-at="2017-01-23T01:45:49Z">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="42279" started-at="2017-01-22T23:08:25Z" finished-at="2017-01-22T23:09:07Z">
+    <test name="Test1" duration-ms="46542" started-at="2017-01-23T01:45:03Z" finished-at="2017-01-23T01:45:49Z">
       <class name="com.akamai.tests.Search_Test_Jobs">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.akamai.tests.Search_Test_Jobs@668bc3d5]" name="setup" is-config="true" duration-ms="13107" started-at="2017-01-22T18:08:25Z" finished-at="2017-01-22T18:08:38Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.akamai.tests.Search_Test_Jobs@668bc3d5]" name="setup" is-config="true" duration-ms="14704" started-at="2017-01-22T20:45:03Z" finished-at="2017-01-22T20:45:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="checkDatePostedForOffer()[pri:0, instance:com.akamai.tests.Search_Test_Jobs@668bc3d5]" name="checkDatePostedForOffer" duration-ms="4044" started-at="2017-01-22T18:08:38Z" finished-at="2017-01-22T18:08:42Z">
+        <test-method status="PASS" signature="checkDatePostedForOffer()[pri:0, instance:com.akamai.tests.Search_Test_Jobs@668bc3d5]" name="checkDatePostedForOffer" duration-ms="4314" started-at="2017-01-22T20:45:18Z" finished-at="2017-01-22T20:45:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkDatePostedForOffer -->
-        <test-method status="PASS" signature="terdown()[pri:0, instance:com.akamai.tests.Search_Test_Jobs@668bc3d5]" name="terdown" is-config="true" duration-ms="1452" started-at="2017-01-22T18:08:42Z" finished-at="2017-01-22T18:08:43Z">
+        <test-method status="PASS" signature="terdown()[pri:0, instance:com.akamai.tests.Search_Test_Jobs@668bc3d5]" name="terdown" is-config="true" duration-ms="1513" started-at="2017-01-22T20:45:22Z" finished-at="2017-01-22T20:45:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terdown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.akamai.tests.Search_Test_Jobs@668bc3d5]" name="setup" is-config="true" duration-ms="10141" started-at="2017-01-22T18:08:43Z" finished-at="2017-01-22T18:08:54Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.akamai.tests.Search_Test_Jobs@668bc3d5]" name="setup" is-config="true" duration-ms="11340" started-at="2017-01-22T20:45:23Z" finished-at="2017-01-22T20:45:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="checkNumberOfJobsPosted()[pri:0, instance:com.akamai.tests.Search_Test_Jobs@668bc3d5]" name="checkNumberOfJobsPosted" duration-ms="173" started-at="2017-01-22T18:08:54Z" finished-at="2017-01-22T18:08:54Z">
+        <test-method status="PASS" signature="checkNumberOfJobsPosted()[pri:0, instance:com.akamai.tests.Search_Test_Jobs@668bc3d5]" name="checkNumberOfJobsPosted" duration-ms="120" started-at="2017-01-22T20:45:35Z" finished-at="2017-01-22T20:45:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkNumberOfJobsPosted -->
-        <test-method status="PASS" signature="terdown()[pri:0, instance:com.akamai.tests.Search_Test_Jobs@668bc3d5]" name="terdown" is-config="true" duration-ms="1195" started-at="2017-01-22T18:08:54Z" finished-at="2017-01-22T18:08:55Z">
+        <test-method status="PASS" signature="terdown()[pri:0, instance:com.akamai.tests.Search_Test_Jobs@668bc3d5]" name="terdown" is-config="true" duration-ms="1268" started-at="2017-01-22T20:45:35Z" finished-at="2017-01-22T20:45:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terdown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.akamai.tests.Search_Test_Jobs@668bc3d5]" name="setup" is-config="true" duration-ms="10502" started-at="2017-01-22T18:08:55Z" finished-at="2017-01-22T18:09:05Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.akamai.tests.Search_Test_Jobs@668bc3d5]" name="setup" is-config="true" duration-ms="10601" started-at="2017-01-22T20:45:36Z" finished-at="2017-01-22T20:45:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="checkNumberOfResults()[pri:0, instance:com.akamai.tests.Search_Test_Jobs@668bc3d5]" name="checkNumberOfResults" duration-ms="385" started-at="2017-01-22T18:09:05Z" finished-at="2017-01-22T18:09:06Z">
+        <test-method status="PASS" signature="checkNumberOfResults()[pri:0, instance:com.akamai.tests.Search_Test_Jobs@668bc3d5]" name="checkNumberOfResults" duration-ms="1358" started-at="2017-01-22T20:45:47Z" finished-at="2017-01-22T20:45:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkNumberOfResults -->
-        <test-method status="PASS" signature="terdown()[pri:0, instance:com.akamai.tests.Search_Test_Jobs@668bc3d5]" name="terdown" is-config="true" duration-ms="1231" started-at="2017-01-22T18:09:06Z" finished-at="2017-01-22T18:09:07Z">
+        <test-method status="PASS" signature="terdown()[pri:0, instance:com.akamai.tests.Search_Test_Jobs@668bc3d5]" name="terdown" is-config="true" duration-ms="1286" started-at="2017-01-22T20:45:48Z" finished-at="2017-01-22T20:45:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terdown -->
