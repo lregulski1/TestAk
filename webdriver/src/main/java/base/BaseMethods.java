@@ -13,6 +13,7 @@ public class BaseMethods {
 	public String PAGE_URL;
 	public String PAGE_TITLE;
 	
+	
 	// Set driver
 	public BaseMethods(WebDriver driver){
 		this.driver = driver;
@@ -39,18 +40,20 @@ public class BaseMethods {
 	    }
 	// Wait for element
 	public void waitForElement(WebElement element){
-		 WebDriverWait wait = new WebDriverWait(driver, 20);
+		 WebDriverWait wait = new WebDriverWait(driver, 10);
 		 wait.until(ExpectedConditions.elementToBeClickable(element));
 	 }
 	// Click on element
 	public void clickElement(WebElement element){
+		waitForElement(element);
 		element.click();
 	}
 	// Send text to element
-	public void sendText(WebElement loc, String text){
-		loc.clear();
-		loc.sendKeys(text);
-		Assert.assertEquals(loc.getAttribute("value"), text);	
+	public void sendText(WebElement element, String text){
+		waitForElement(element);
+		element.clear();
+		element.sendKeys(text);
+		Assert.assertEquals(element.getAttribute("value"), text);	
 	}
 	
 }

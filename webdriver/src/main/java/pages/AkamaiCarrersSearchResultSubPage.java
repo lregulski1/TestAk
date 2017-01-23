@@ -14,8 +14,9 @@ public class AkamaiCarrersSearchResultSubPage extends BaseMethods{
 	public AkamaiCarrersSearchResultSubPage(WebDriver driver){
 		super(driver);
 	} 
-	
+	// Check post date of the job offer
 	public void checkPosstDate(String date){
+		waitForElement(postedDate);
 		Assert.assertEquals(date, postedDate.getText());	
 	}
 }
